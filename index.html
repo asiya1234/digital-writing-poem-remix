@@ -42,9 +42,9 @@
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "lionesses,women,lions,buffalos".split(","),
+        verbs = "run,roar,hunt,chase,hide,die".split(","),
+        objects = "desert,tree,hut,sand,river".split(",");
       // set up the counter
       let counter = 0;
 
@@ -62,9 +62,9 @@
         }
         const text =
           getRandomFromList(subjects) +
-          " " +
-          getRandomFromList(verbs) +
           " to " +
+          getRandomFromList(verbs) +
+          " the " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
